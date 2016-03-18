@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.seniorproject.rheanna.diabetesapp.Home">
+    <item
+        android:id="@+id/action_menu"
+        android:orderInCategory="100"
+        android:title="Main Menu"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_activity"
+        android:orderInCategory="100"
+        android:title="Activity"
+        />
+    <item
+        android:id="@+id/action_food"
+        android:orderInCategory="100"
+        android:title="Food Log"
+         />
+    <item
+        android:id="@+id/action_glucose"
+        android:orderInCategory="100"
+        android:title="Glucose Levels"
+        />
+    <item
+        android:id="@+id/action_forum"
+        android:orderInCategory="100"
+        android:title="Forum"
+        />
+    <item
+        android:id="@+id/action_happy"
+        android:orderInCategory="100"
+        android:title="Emotion Quiz"
+        />
+    <item
+        android:id="@+id/action_sleep"
+        android:orderInCategory="100"
+        android:title="Sleep Log"
+        />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="Logout"
+        />
+
+</menu>

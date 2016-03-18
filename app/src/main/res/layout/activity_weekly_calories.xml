@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.seniorproject.rheanna.diabetesapp.WeeklyCalories">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp"
+        android:text="Weekly Activity"
+        android:textSize="40dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories Burned"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"/>
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/calories_chart"
+        android:layout_width="match_parent"
+        android:layout_height="312dp"
+        android:layout_marginBottom="10dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Back"
+        android:id="@+id/weekly_calories_back"/>
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/weekly_calories_webview"></WebView>
+
+
+</LinearLayout>

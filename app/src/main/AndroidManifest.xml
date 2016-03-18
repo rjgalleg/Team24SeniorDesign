@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.seniorproject.rheanna.diabetesapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/blood"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register" />
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SleepLog" />
+        <activity android:name=".Activity" />
+        <activity android:name=".WeeklyActivity" />
+        <activity android:name=".FloorsActivity" />
+        <activity android:name=".WeeklyCalories" />
+        <activity android:name=".WeeklySteps" />
+        <activity android:name=".MonthlyActivity" />
+        <activity android:name=".MonthlySteps" />
+        <activity android:name=".MonthlyCalories" />
+        <activity android:name=".MonthlyFloors" />
+        <activity android:name=".LogActivity" />
+        <activity android:name=".HappinessActivity" />
+        <activity android:name=".FoodLog" />
+        <activity android:name=".GlucoseActivity" />
+        <activity android:name=".DailyActivity" />
+        <activity android:name=".WeeklyActivityTabs" />
+        <activity android:name=".ViewGlucose" />
+        <activity android:name=".GlucoseMenu" />
+        <activity
+            android:name=".CommentNewsFeed"
+            android:label="@string/title_activity_comment_news_feed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CommentPost" />
+        <activity
+            android:name=".FitnessNewsFeed"
+            android:label="@string/title_activity_fitness_news_feed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FitnessPost" />
+        <activity
+            android:name=".MedicalNewsFeed"
+            android:label="@string/title_activity_medical_news_feed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MedicalPost" />
+        <activity android:name=".Menu_News_Feed" />
+        <activity
+            android:name=".MiscellaneousNewsFeed"
+            android:label="@string/title_activity_miscellaneous_news_feed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MiscellaneousPost" />
+        <activity
+            android:name=".NutritionNewsFeed"
+            android:label="@string/title_activity_nutrition_news_feed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".NutritionPost"></activity>
+    </application>
+
+</manifest>

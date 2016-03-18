@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppTheme"
+    android:background="#ffffff"
+    android:weightSum="1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"
+            android:text="Welcome"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:id="@+id/textView2"
+            android:textColor="#e6000000"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly Step Count"
+            android:textSize="20sp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/graph"
+                android:layout_width="match_parent"
+                android:layout_height="143dp"
+                android:background="@android:color/white"
+                android:layout_gravity="center_vertical"
+                 />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#ffffff"
+            android:weightSum="1">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Physical Health"
+            android:textSize="20sp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/exercise_red" />
+
+                <ImageView
+                    android:layout_width="73dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/imageView2"
+                    android:src="@drawable/food" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/imageView3"
+                    android:src="@drawable/teardrop" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="374dp"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_gravity="center"
+                >
+
+                <Button
+                    android:id="@+id/stress_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Activity"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"
+                    android:textColor="#ff6a6a"
+                    android:layout_weight="0.43" />
+
+                <Button
+                    android:id="@+id/heart_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Nutrition"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ffffff"
+                    android:textColor="#ff6a6a"
+                    android:layout_weight="0.30" />
+
+                <Button
+                    android:id="@+id/main_glucose_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:padding="16dp"
+                    android:text="Glucose"
+                    android:background="#ffffff"
+                    android:textColor="#ff6a6a" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Emotional Health"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="83dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/forum_img"
+                    android:src="@drawable/forum" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/emotion_img"
+                    android:src="@drawable/smile" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/friends_img"
+                    android:src="@drawable/bed" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="374dp"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_gravity="center"
+                >
+
+                <Button
+                    android:id="@+id/forum_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Forum"
+                    android:layout_gravity="center"
+                    android:background="#ffffff"
+                    android:textColor="#60f94f"
+                    android:layout_weight="0.43" />
+
+                <Button
+                    android:id="@+id/emotion_log_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:layout_margin="5dp"
+                    android:text="Emotion Log"
+                    android:layout_gravity="center_vertical"
+                    android:background="#ffffff"
+                    android:textColor="#60f94f" />
+
+                <Button
+                    android:id="@+id/sleep_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="16dp"
+                    android:text="Sleep Log"
+                    android:background="#ffffff"
+                    android:textColor="#60f94f"
+                    android:layout_weight="0.14" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_webview"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.68" />
+</LinearLayout>
